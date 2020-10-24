@@ -1,4 +1,6 @@
 {
+    "itemGroup.effectpads": "Effect Pads",
+
     "block.effectpads.jump_pad": "Jump Pad",
     "block.effectpads.jump_pad_2": "Jump Pad+",
     "block.effectpads.jump_pad_3": "Jump Pad++",
