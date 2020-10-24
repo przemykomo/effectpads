@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:wool"
+        },
+        "S": {
+            "item": "effectpads:jump_pad"
+        }
+    },
+    "result": {
+        "item": "effectpads:landing_pad",
+        "count": 1
+    }
+}

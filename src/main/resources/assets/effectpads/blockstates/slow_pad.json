@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "effectpads:block/slow_pad"
+        }
+    }
+}

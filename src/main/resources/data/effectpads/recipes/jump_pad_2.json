@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S"
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:slimeballs"
+        },
+        "S": {
+            "item": "effectpads:jump_pad"
+        }
+    },
+    "result": {
+        "item": "effectpads:jump_pad_2",
+        "count": 1
+    }
+}

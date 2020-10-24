@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:soul_sand"
+        },
+        "S": {
+            "item": "minecraft:stone_pressure_plate"
+        }
+    },
+    "result": {
+        "item": "effectpads:slow_pad",
+        "count": 1
+    }
+}

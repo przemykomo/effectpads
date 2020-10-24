@@ -1,0 +1,13 @@
+{
+    "block.effectpads.jump_pad": "Jump Pad",
+    "block.effectpads.jump_pad_2": "Jump Pad+",
+    "block.effectpads.jump_pad_3": "Jump Pad++",
+    "block.effectpads.jump_pad_4": "Jump Pad+++",
+
+    "block.effectpads.speed_pad": "Speed Pad",
+    "block.effectpads.slow_pad": "Slow Pad",
+    "block.effectpads.landing_pad": "Landing Pad",
+    "block.effectpads.cactus_pad": "Cactus Pad",
+    "block.effectpads.magma_pad": "Magma Pad"
+
+}

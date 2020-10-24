@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "minecraft:wool"
+        },
+        {
+            "tag": "forge:slimeballs"
+        },
+        {
+            "item": "minecraft:stone_pressure_plate"
+        }
+    ],
+    "result": {
+        "item": "effectpads:landing_pad",
+        "count": 1
+    }
+}
