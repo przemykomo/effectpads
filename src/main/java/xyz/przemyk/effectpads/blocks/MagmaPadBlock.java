@@ -6,7 +6,6 @@ import net.minecraft.block.BubbleColumnBlock;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.DamageSource;
@@ -27,7 +26,7 @@ public class MagmaPadBlock extends PadBlock {
     }
 
     public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
-        if (!entityIn.func_230279_az_() && entityIn instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entityIn)) {
+        if (!entityIn.isImmuneToFire() && entityIn instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entityIn)) {
             entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 1.0F);
         }
 
@@ -49,7 +48,7 @@ public class MagmaPadBlock extends PadBlock {
     public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
         BlockPos blockpos = pos.up();
         if (worldIn.getFluidState(pos).isTagged(FluidTags.WATER)) {
-            worldIn.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (worldIn.rand.nextFloat() - worldIn.rand.nextFloat()) * 0.8F);
+            worldIn.playSound(null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (worldIn.rand.nextFloat() - worldIn.rand.nextFloat()) * 0.8F);
             worldIn.spawnParticle(ParticleTypes.LARGE_SMOKE, (double)blockpos.getX() + 0.5D, (double)blockpos.getY() + 0.25D, (double)blockpos.getZ() + 0.5D, 8, 0.5D, 0.25D, 0.5D, 0.0D);
         }
 

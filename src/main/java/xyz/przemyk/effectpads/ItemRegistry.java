@@ -21,7 +21,7 @@ public class ItemRegistry {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(JUMP_PAD.get());
-        };
+        }
     };
 
     public static final RegistryObject<BlockItem> JUMP_PAD = ITEMS.register("jump_pad", () -> new BlockItem(BlockRegistry.JUMP_PAD.get(), new Item.Properties().group(PADS_ITEM_GROUP)));

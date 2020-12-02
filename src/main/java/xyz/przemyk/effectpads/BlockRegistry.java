@@ -24,10 +24,10 @@ public class BlockRegistry {
     public static final RegistryObject<JumpPadBlock> JUMP_PAD_4 = BLOCKS.register("jump_pad_4", () -> new JumpPadBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid().hardnessAndResistance(0.6F), 1.5F));
 
     public static final RegistryObject<PadBlock> SPEED_PAD = BLOCKS.register("speed_pad", () -> new PadBlock(AbstractBlock.Properties.create(Material.ICE).speedFactor(1.5F).hardnessAndResistance(0.8F)));
-    public static final RegistryObject<PadBlock> SLOW_PAD = BLOCKS.register("slow_pad", () -> new PadBlock(AbstractBlock.Properties.create(Material.SAND, MaterialColor.BROWN).speedFactor(0.4F).hardnessAndResistance(0.5F).sound(SoundType.field_235585_G_)));
+    public static final RegistryObject<PadBlock> SLOW_PAD = BLOCKS.register("slow_pad", () -> new PadBlock(AbstractBlock.Properties.create(Material.SAND, MaterialColor.BROWN).speedFactor(0.4F).hardnessAndResistance(0.5F).sound(SoundType.SOUL_SAND)));
 
     public static final RegistryObject<LandingPadBlock> LANDING_PAD = BLOCKS.register("landing_pad", () -> new LandingPadBlock(AbstractBlock.Properties.create(Material.WOOL).hardnessAndResistance(0.8F).sound(SoundType.CLOTH)));
 
     public static final RegistryObject<CactusPadBlock> CACTUS_PAD = BLOCKS.register("cactus_pad", () -> new CactusPadBlock(AbstractBlock.Properties.create(Material.CACTUS).hardnessAndResistance(0.4F).sound(SoundType.CLOTH)));
-    public static final RegistryObject<MagmaPadBlock> MAGMA_PAD = BLOCKS.register("magma_pad", () -> new MagmaPadBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).func_235838_a_(blockState -> 3).tickRandomly().hardnessAndResistance(0.5F)));
+    public static final RegistryObject<MagmaPadBlock> MAGMA_PAD = BLOCKS.register("magma_pad", () -> new MagmaPadBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).setLightLevel(blockState -> 3).tickRandomly().hardnessAndResistance(0.5F)));
 }
